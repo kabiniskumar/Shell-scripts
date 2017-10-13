@@ -1,4 +1,4 @@
-# Automation Script for Data Validation between extract and table
+# Mload generator script for extract validation
 
 In a typical datawarehousing scenario to perform manual validation of extracts, we pick a sample of records from the extract and validate the data against a target table. This process is prone to errors since the tester is not validating the whole dataset.
 
