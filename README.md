@@ -28,7 +28,7 @@ In addition, this script also generates a bteq validation script to validate the
             pst_dt DATE FORMAT 'YYYY-MM-DD',
             gk_amt NUMERIC(15,2)
 
-**Mload generator script**: mload_gen.ksh
+
 
 
 # Output files generated:
