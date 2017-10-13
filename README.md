@@ -31,7 +31,15 @@ In addition, this script also generates a bteq validation script to validate the
 **Mload generator script**: mload_gen.ksh
 
 
-# How to generate mload scripts
+# Output files generated:
+
+**\<tablename\>.mload** : This is the mload script that needs to be executed to load the extract to work table.
+  
+**Validation_\<tablename\>.btq** : This is the bteq script that can be used for data validation between the work table and target table.
+
+
+
+# Process:
 
 Execute the mload generator script after configuring the extract path and extract layout file with the below run command.
 
@@ -41,11 +49,6 @@ Execute the mload generator script after configuring the extract path and extrac
   The script will prompt for the target table name in the format \[SCHEMA.TABLE\]
   
 
-# Output files generated:
-
-**\<tablename\>.mload** : This is the mload script that needs to be executed to load the extract to work table.
-  
-**Validation_\<tablename\>.btq** : This is the bteq script that can be used for data validation between the work table and target table.
 
 The script executes and formats the layout file according to mload standards and generates a mload script which can be readily executed.
 It also generates a validation bteq that can be executed to perform source-minus-target and target-minus-source comparisons.
